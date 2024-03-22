@@ -1,6 +1,6 @@
 package com.example.dto;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,6 +20,7 @@ public class StaffDTO {
 	private String name;
 	private boolean gender;
 	//@datetimeformat de input data tu view
+	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	private Date birthday;

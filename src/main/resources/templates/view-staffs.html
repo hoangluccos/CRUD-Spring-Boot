@@ -44,9 +44,11 @@
 					<td th:text="${item.salary}"></td>
 					<td th:text="${item.departs.name}"></td>
 					<td> <span th:text="${item.gender}? 'Nam': 'Nu'"> </span> </td>
-					<td><a class="btn btn-primary btn-sm"
-						href="#">Edit</a> | <a
-						class="btn btn-danger btn-sm" href="#">Del</a></td>
+					<td>
+						<a class="btn btn-primary btn-sm" th:href="@{'/staff-edit/' + ${item.id}}">Edit</a> | 
+						
+						<a class="btn btn-danger btn-sm" th:href="@{'/staff-delete/' + ${item.id}}">Del</a>
+					</td>
 				</tr>
 				
 

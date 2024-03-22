@@ -13,7 +13,7 @@ import com.example.repositories.StaffRepository;
 
 @Service
 
-public class StaffServiceImple implements StaffService {
+public class StaffServiceImpl implements StaffService {
 	@Autowired
 	StaffRepository staffepository;
 
